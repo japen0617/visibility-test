@@ -677,7 +677,11 @@ const submitStatusEl = document.getElementById('submit-status');
         const payload = {
             type: 'pdf',
             userName: userInfo.name,
+            userContactPhone: userInfo.contactPhone,
+            userMobilePhone: userInfo.mobilePhone,
             userCompany: userInfo.company,
+            userIntegrator: userInfo.integrator,
+            userTitle: userInfo.title,
             userEmail: userInfo.email,
             pdfBase64: base64
         };
@@ -708,6 +712,8 @@ const submitStatusEl = document.getElementById('submit-status');
             userContactPhone: userInfo.contactPhone,
             userMobilePhone: userInfo.mobilePhone,
             userCompany: userInfo.company,
+            userIntegrator: userInfo.integrator,
+            userTitle: userInfo.title,
             userEmail: userInfo.email,
             answers: answerTexts
         };
