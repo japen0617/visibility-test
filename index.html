@@ -281,6 +281,10 @@
                         <label for="user-email">電子郵件<span class="required">*</span></label>
                         <input type="email" id="user-email" name="user-email" required>
                     </div>
+                    <div class="form-group">
+                        <label for="user-integrator">系統整合服務商</label>
+                        <input type="text" id="user-integrator" name="user-integrator">
+                    </div>
                     <div class="form-check">
                         <input type="checkbox" id="privacy-check" required>
                         <span class="privacy-text">我同意逸盈科技依據隱私權政策蒐集、處理並使用本人提供的個人資料，用於此次免費服務與後續 Gigamon 相關產品與活動資訊通知。</span>
@@ -306,6 +310,7 @@
                 company: document.getElementById('user-company').value.trim(),
                 title: document.getElementById('user-title').value.trim(),
                 email: document.getElementById('user-email').value.trim(),
+                integrator: document.getElementById('user-integrator').value.trim(),
             };
 
             // 1. 檢查所有必填欄位和隱私權同意
